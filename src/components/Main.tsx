@@ -1,7 +1,6 @@
 import useSpeechRecognition from "../hooks/useSpeechRecognitionHook";
 
 const Main = () => {
-    useSpeechRecognition
     const{
         text,
         startListening,
@@ -18,9 +17,16 @@ const Main = () => {
           <div>
             <button onClick = {startListening} >Start Listening</button>
           </div>
+
+          <div>
+            <button onClick = {stopListening} > Stop Listening</button>
+          </div>
+          
+          {isListening ? <div>Your browser is currently listening your voice </div> : null}
+          {text}
         </>
         ) : (
-          <h1>Your browser no speech</h1>
+          <h1>Your browser has no speech support</h1>
         )}
         </div>
   );

@@ -1,0 +1,3 @@
+7/30
+Basic implementation complete. Can process my voice and extract only the words out of it via web speech API. UI with Simple buttons and text.
+
